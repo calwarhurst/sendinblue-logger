@@ -1,5 +1,11 @@
+"""
+sendinblue-logger is a logging handler for Python's logging module to send log messages over sendinblue's transactional email service.
+"""
+
+
 import requests
 import logging
+
 
 class LoggingHandler(logging.Handler):
     def __init__(self, level, api_key, from_email, to_email):
